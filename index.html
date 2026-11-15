@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Service Assist</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="container">
+
+        <h1>Smart Service Assist</h1>
+
+        <nav>
+            <a href="#sobre">Sobre</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#chatbot">IA Gemini</a>
+            <a href="#contato">Contato</a>
+        </nav>
+
+    </div>
+
+</header>
+
+<section class="hero">
+
+    <div class="container">
+
+        <h2>Transformando Atendimento com IA</h2>
+
+        <p>
+            Soluções digitais para pequenas empresas com automação e inteligência artificial.
+        </p>
+
+        <button onclick="scrollToForm()">
+            Solicitar Orçamento
+        </button>
+
+    </div>
+
+</section>
+
+<section id="sobre" class="container">
+
+    <h2>Sobre Nós</h2>
+
+    <p>
+        A Smart Service Assist oferece soluções modernas de desenvolvimento web,
+        automação empresarial e atendimento com Inteligência Artificial.
+    </p>
+
+</section>
+
+<section id="servicos" class="container">
+
+    <h2>Nossos Serviços</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Criação de Sites</h3>
+            <p>Sites modernos e responsivos.</p>
+        </div>
+
+        <div class="card">
+            <h3>Automação Empresarial</h3>
+            <p>Automatização de tarefas e processos.</p>
+        </div>
+
+        <div class="card">
+            <h3>Chatbots com IA</h3>
+            <p>Atendimento automatizado 24 horas.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="container recomendacao">
+
+    <h2>Descubra o Serviço Ideal</h2>
+
+    <select id="servico">
+
+        <option value="">Selecione uma opção</option>
+        <option value="site">Preciso de um Site</option>
+        <option value="automacao">Preciso de Automação</option>
+        <option value="ia">Quero um Chatbot IA</option>
+
+    </select>
+
+    <button onclick="recomendarServico()">
+        Ver Recomendação
+    </button>
+
+    <p id="resultado"></p>
+
+</section>
+
+<section id="chatbot" class="container chatbot">
+
+    <h2>🤖 Assistente IA Gemini</h2>
+
+    <textarea
+        id="pergunta"
+        rows="5"
+        placeholder="Digite sua pergunta..."></textarea>
+
+    <br><br>
+
+    <button onclick="perguntarGemini()">
+        Perguntar à IA
+    </button>
+
+    <div id="resposta"></div>
+
+</section>
+
+<section id="contato" class="container">
+
+    <h2>Solicitar Orçamento</h2>
+
+    <form id="formContato">
+
+        <input
+            type="text"
+            id="nome"
+            placeholder="Seu Nome"
+            required>
+
+        <input
+            type="email"
+            id="email"
+            placeholder="Seu E-mail"
+            required>
+
+        <textarea
+            id="mensagem"
+            rows="5"
+            placeholder="Descreva sua necessidade"
+            required></textarea>
+
+        <button type="submit">
+            Enviar Solicitação
+        </button>
+
+    </form>
+
+</section>
+
+<footer>
+
+    <p>
+        © 2026 Smart Service Assist
+    </p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
